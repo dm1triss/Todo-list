@@ -113,6 +113,6 @@ body.dark-theme .h4 {
 }
 @media (width <= 453px) {
   .button__container {
-    flex-direction: column;
+    justify-content: center;
   }
 }
