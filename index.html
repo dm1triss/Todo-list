@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>ToDo приложение</title>
+</head>
+
+<body>
+	
+<button id="toggleTheme" style="width: 250px;" class="btn btn-secondary mt-4">Переключить тему</button>
+
+	<div class="container">
+		<div class="display-4 mb-2" style="text-align: center">
+			ToDo приложение
+		</div>
+		<div class="h4 mb-5" style="text-align: center">
+			список задач на сегодня
+		</div>
+		<div class="card mb-4">
+			<ul id="tasksList" class="list-group list-group-flush">
+				<li id="emptyList" class="list-group-item empty-list">
+					<img src="./img/todo.png" alt="Empty" width="48" class="mt-3" />
+					<div class="empty-list__title">Список дел пуст</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Form -->
+		<div class="card bg-light">
+			<div class="card-header">Добавить новую задачу</div>
+			<div class="card-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="taskInput" placeholder="Текст задачи" required />
+					</div>
+					<button type="submit" class="btn btn-primary btn-lg active">
+						Добавить
+					</button>
+				</form>
+			</div>
+		</div>
+		<!-- //Form  -->
+		 <div class="button__container">
+			<button id="clearAllTasks" class="btn btn-danger mt-4 float-right mr-2">Очистить все задачи</button>
+			<button id="removeDoneTasks" class="btn btn-secondary mt-4 float-right">Удалить выполненные задачи</button>
+		 </div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+<div class="copyright">
+	<h3>Списки задач локальны и видны только для вас!</h3>
+	<p>Данные сохраняются только на устройстве пользователя и не передаются на сервер.</p>
+</div>
+
+</html>
