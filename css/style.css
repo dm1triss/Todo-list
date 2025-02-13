@@ -111,3 +111,8 @@ body.dark-theme .display-4,
 body.dark-theme .h4 {
   color: #ffffff;
 }
+@media (width <= 453px) {
+  .button__container {
+    flex-direction: column;
+  }
+}
